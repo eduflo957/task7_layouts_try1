@@ -8,9 +8,11 @@
     android:layout_marginBottom="15dp">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:hint="Nombres">
 
     </EditText>
@@ -19,13 +21,13 @@
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
+        android:layout_below="@id/editText1"
         android:hint="Apellidos">
 
     </EditText>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText2"
@@ -37,24 +39,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editText2"
         android:layout_marginLeft="100dp"
-        android:layout_toRightOf="@id/textView"
+        android:layout_toRightOf="@id/textView1"
         android:text="Cargo" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_alignLeft="@id/textView"
-        android:visibility="visible" />
+        android:layout_below="@id/textView1"
+        android:layout_alignLeft="@id/textView1" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView2"
-        android:layout_alignLeft="@id/textView2"
-        android:visibility="visible" />
+        android:layout_alignLeft="@id/textView2" />
 
 
 </RelativeLayout>
